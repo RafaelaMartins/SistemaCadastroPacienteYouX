@@ -1,0 +1,6 @@
+{
+    
+    "require": {
+        "coffeecode/router": "^1.0"
+    }
+}
