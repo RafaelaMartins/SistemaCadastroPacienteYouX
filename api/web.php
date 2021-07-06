@@ -22,7 +22,7 @@ session_start();
 use Symfony\Component\HttpFoundation\JsonResponse;
 use CoffeeCode\Router\Router;
 
-$rotas = new Router($_ENV('URL_BASE'.'api/'));
+$rotas = new Router(URL_API);
 $rotas->namespace('\\api\Controller')->group(null);
 $rotas->get("/", "Erro");
 $rotas->post("/adiciona", "Usuario:adicionaUsuario");
