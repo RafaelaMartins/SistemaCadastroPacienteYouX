@@ -1,4 +1,5 @@
-<?php  ?>
+<?php 
+?>
 <html>
 <head>
     <!-- Required meta tags -->
@@ -68,7 +69,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.css" integrity="sha512-0V10q+b1Iumz67sVDL8LPFZEEavo6H/nBSyghr7mm9JEQkOAm91HNoZQRvQdjennBb/oEuW+8oZHVpIKq+d25g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>UX Group Test</title>
-    <link rel = "icon" href ="image/mobile-pay.jpg" type = "image/x-icon">
   </head>
   <body>
 
@@ -81,130 +81,52 @@
         <div class="card mb-1 pb-1 pt-1">
             <div class="card-header d-flex justify-content-center bg-light">
 					<div class="row text-center">
-						<!--<img src="image/mobile-pay.jpg" class="col-sm-4 col-6 rounded float-center center-block"  alt="Logo">-->
-                        <p class="h5 text-dark" style="font-family: Tahoma, Geneva, sans-serif;">Clínica UX Group/p>
+                        <p class="h5 text-dark" style="font-family: Tahoma, Geneva, sans-serif;">Clínica UX Group</p>
 					</div>
 			</div>
             <div class="card-body d-flex justify-content-center bg-dark h-100">
-
-                <div  id="login" class="card-pay bg-light mt-25 mb-50">
-                    <div class="row col-12 col-sm-12 p-1 m-1">
-                        <h2 id="discourse-modal-title" class="text-primary">Login</h2>
-                    </div>
-                    <div class="row col-12 col-sm-12 p-1 m-1">
-                        <p class="text-dark" style="font-size:14px">Não possui uma conta? <a href="#" onClick="register_mode()"> Clique aqui </a></p>
-                    </div>
-                    <div class="row col-12 col-sm-12 p-1 m-1">
-                        <div class="col-sm-10 col-xl-10 d-flex justify-content-center d-block">
-                            <div class="input-group mb-3">
-                                <div class="input-group-append">
-                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                </div>
-                                    <input type="text" name="username"  id="username" class="form-control input_user" value="" placeholder="CPF ou Nome">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row col-12 col-sm-12 p-1 m-1">
-                        <div class="col-sm-10 col-xl-10 d-flex justify-content-center d-block">
-                            <div class="input-group mb-3">
-                                <div class="input-group-append">
-                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
-                                </div>
-                                    <input type="password" name="key" id="key" class="form-control input_user" value="" placeholder="Senha">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row col-12 col-sm-12 p-1 m-1">
-                        <div class="col-sm-10 col-xl-10 d-flex justify-content-center">
-                           <button class="btn btn-success btn-sm" onClick="logar()">Login</button>
-                        </div>
-                    </div>
-                    <div class="row col-12 col-sm-12 p-1 m-1">
-                        <div class="col-sm-10 col-xl-10 d-flex justify-content-center">
-                           <button class="btn btn-white btn-sm text-primary"onClick="recover_mode()">Eu esqueci minha senha</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div  id="recover" class="card-pay bg-light mt-25 mb-50">
-                <i class="fas fa-arrow-left text-dark" onClick="login_mode()"></i>
-                    <div class="row col-12 col-sm-12 p-1 m-1">
-                        <h2 id="discourse-modal-title" class="text-primary">Recuperar</h2>
-                    </div>
-
-                    <div class="row col-12 col-sm-12 p-1 m-1">
-                        <div class="col-sm-10 col-xl-10 d-flex justify-content-center d-block">
-                            <div class="input-group mb-3">
-                                <div class="input-group-append">
-                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                                </div>
-                                    <input type="text" name="email_recover" id="email_recover" class="form-control input_user" value="" placeholder="E-mail">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row col-12 col-sm-12 p-1 m-1">
-                        <div class="col-sm-10 col-xl-10 d-flex justify-content-center d-block">
-                           <p class="h6 text-center text-secondary">OU</p>
-                        </div>
-                    </div>
-                    <div class="row col-12 col-sm-12 p-1 m-1">
-                        <div class="col-sm-10 col-xl-10 d-flex justify-content-center d-block">
-                            <div class="input-group mb-3">
-                                <div class="input-group-append">
-                                    <span class="input-group-text"><i class="fas fa-address-card"></i></span>
-                                </div>
-                                    <input type="text" name="cpf_recover" id="cpf_recover" class="form-control input_user" value="" placeholder="CPF">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row col-12 col-sm-12 p-1 m-1">
-                        <div class="col-sm-10 col-xl-10 d-flex justify-content-center">
-                           <button class="btn btn-success btn-sm" onClick=recover()>Recuperar</button>
-                        </div>
-                    </div>
-
-                </div>
+               
 
                 <div  id="register" class="card-pay bg-light mt-25 mb-50">
-                    <i class="fas fa-arrow-left text-dark" onClick="login_mode()"></i>
                         <div class="row col-12 col-sm-12 p-1 m-1">
                             <h2 id="discourse-modal-title" class="text-primary">Cadastre-se</h2>
                         </div>
                         <div class="row col-12 col-sm-12 p-1 m-1">
-                            <div class="col-sm-4 col-xl-4 d-flex justify-content-center d-block">
+                            <div class="col-sm-4 col-xl-4  d-block">
                                 <div class="form-group">
                                     <label for="razao_social" class="text-dark" style="font-size:14px">Nome Completo</label>
                                     <input type="text" name="razao_social" id="razao_social" class="form-control form-control-sm input_user" value="" placeholder="Nome Completo">
                                 </div>
                             </div>
-                            <div class="col-sm-4 col-xl-4 d-flex justify-content-center d-block">
+                            <div class="col-sm-5 col-xl-4 d-block">
+                                <div class="form-group">
+                                    <label for="birthdate" class="text-dark" style="font-size:14px">Data de Nascimento</label>
+                                    <input type="date" name="birthdate" id="birthdate" class="form-control form-control-sm input_user" value="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xl-4  d-block">
                                 <div class="form-group">
                                     <label for="taxpayer_id" class="text-dark" style="font-size:14px">CPF</label>
                                     <input type="text" name="taxpayer_id" id="taxpayer_id" class="form-control form-control-sm input_user" value="" placeholder="CPF">
                                 </div>
                             </div>
-                            <div class="col-sm-4 col-xl-4 d-flex justify-content-center d-block">
-                                <div class="form-group">
-                                    <label for="bithdate" class="text-dark" style="font-size:14px">Data de Nascimento</label>
-                                    <input type="date" name="bithdate" id="bithdate" class="form-control form-control-sm input_user" value="">
-                                </div>
-                            </div>
+                         
                         </div>
                  
                     <div class="row col-12 col-sm-12 p-1 m-1">
-                        <div class="col-sm-4 col-xl-4 d-flex justify-content-center d-block">
+                        <div class="col-sm-4 col-xl-4 d-block">
                             <div class="form-group">
                                 <label for="weigth" class="text-dark" style="font-size:14px">Peso</label>
-                                <input type="text" name="weigth" id="weigth" class="form-control form-control-sm input_user" value="" placeholder="Peso">
+                                <input type="number" name="weigth" id="weigth" class="form-control form-control-sm input_user" value="" placeholder="Peso">
                             </div>
                         </div>
-                        <div class="col-sm-4 col-xl-4 d-flex justify-content-center d-block">
+                        <div class="col-sm-4 col-xl-4  d-block">
                             <div class="form-group">
                                 <label for="heighth" class="text-dark" style="font-size:14px">Altura</label>
                                 <input type="text" name="heighth" id="heighth" class="form-control form-control-sm input_user" value="" placeholder="Altura">
                             </div>
                         </div>
-                        <div class="col-sm-4 col-xl-4 d-flex justify-content-center d-block">
+                        <div class="col-sm-4 col-xl-4  d-block">
                             <div class="form-group">
                                 <label for="uf" class="text-dark" style="font-size:14px">Estado</label>
                                 <select class="form-control form-control-sm " id="uf" name="uf">
@@ -226,5 +148,8 @@
     </div>
   </body>
 </html>
+<script>
+var url_api = "http://localhost/Api/youX/public/";
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.js" integrity="sha512-zP5W8791v1A6FToy+viyoyUUyjCzx+4K8XZCKzW28AnCoepPNIXecxh9mvGuy3Rt78OzEsU+VCvcObwAMvBAww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/register.js"></script>
