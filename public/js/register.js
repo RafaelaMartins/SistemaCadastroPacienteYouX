@@ -102,30 +102,27 @@ function register(){
         $('#razao_social').addClass('is-invalid');
         return;
     }
-    if(!$('#email').val().trim()){
-        $('#email').addClass('is-invalid');
+    if(!$('#birthdate').val().trim()){
+        $('#birthdate').addClass('is-invalid');
         return;
     }
-    if(!$('#telefone').val().trim()){
-        $('#telefone').addClass('is-invalid');
+    if(!$('#weigth').val().trim()){
+        $('#weigth').addClass('is-invalid');
         return;
     }
-    if(!$('#regime').val().trim()){
-        $('#regime').addClass('is-invalid');
+    if(!$('#uf').val().trim()){
+        $('#uf').addClass('is-invalid');
         return;
     }
-    if(!$('#cpf').val().trim()){
-        $('#cpf').addClass('is-invalid');
+    if(!$('#taxpayer_id').val().trim()){
+        $('#taxpayer_id').addClass('is-invalid');
         return;
     }
-    if($('#regime').val()==1 &&!$('#cnpj').val().trim()){
-        $('#cnpj').addclass('is-invalid');
+    if(!$('#heighth').val().trim()){
+        $('#heighth').addclass('is-invalid');
         return;
     }
-    if(!$('#new_key').val().trim()){
-        $('#new_key').addclass('is-invalid');
-        return;
-    }
+    
     $('.is-invalid').removeClass('is-invalid');
 
     var cnpj = "";

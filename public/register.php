@@ -179,14 +179,14 @@
                             </div>
                             <div class="col-sm-4 col-xl-4 d-flex justify-content-center d-block">
                                 <div class="form-group">
-                                    <label for="cpf" class="text-dark" style="font-size:14px">CPF</label>
-                                    <input type="text" name="cpf" id="cpf" class="form-control form-control-sm input_user" value="" placeholder="CPF">
+                                    <label for="taxpayer_id" class="text-dark" style="font-size:14px">CPF</label>
+                                    <input type="text" name="taxpayer_id" id="taxpayer_id" class="form-control form-control-sm input_user" value="" placeholder="CPF">
                                 </div>
                             </div>
                             <div class="col-sm-4 col-xl-4 d-flex justify-content-center d-block">
                                 <div class="form-group">
                                     <label for="bithdate" class="text-dark" style="font-size:14px">Data de Nascimento</label>
-                                    <input type="text" name="bithdate" id="bithdate" class="form-control form-control-sm input_user" value="" placeholder="Nascimento">
+                                    <input type="date" name="bithdate" id="bithdate" class="form-control form-control-sm input_user" value="">
                                 </div>
                             </div>
                         </div>
@@ -194,14 +194,14 @@
                     <div class="row col-12 col-sm-12 p-1 m-1">
                         <div class="col-sm-4 col-xl-4 d-flex justify-content-center d-block">
                             <div class="form-group">
-                                <label for="peso" class="text-dark" style="font-size:14px">Peso</label>
-                                <input type="text" name="peso" id="peso" class="form-control form-control-sm input_user" value="" placeholder="Peso">
+                                <label for="weigth" class="text-dark" style="font-size:14px">Peso</label>
+                                <input type="text" name="weigth" id="weigth" class="form-control form-control-sm input_user" value="" placeholder="Peso">
                             </div>
                         </div>
                         <div class="col-sm-4 col-xl-4 d-flex justify-content-center d-block">
                             <div class="form-group">
-                                <label for="altura" class="text-dark" style="font-size:14px">Altura</label>
-                                <input type="text" name="altura" id="altura" class="form-control form-control-sm input_user" value="" placeholder="Altura">
+                                <label for="heighth" class="text-dark" style="font-size:14px">Altura</label>
+                                <input type="text" name="heighth" id="heighth" class="form-control form-control-sm input_user" value="" placeholder="Altura">
                             </div>
                         </div>
                         <div class="col-sm-4 col-xl-4 d-flex justify-content-center d-block">
